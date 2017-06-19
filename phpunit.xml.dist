@@ -1,0 +1,15 @@
+<?xml version="1.0" encodeing="UTF-8" ?>
+<phpunit
+    colors="true"
+    bootstrap="tests/_bootstrap.php"
+    <testsuites>
+        <testsuite name="UnitTest">
+            <directory>tests/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist addUncovereFilesFromWhitelist="true">
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
